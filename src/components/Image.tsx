@@ -17,6 +17,12 @@ function ImageKit({src, className, alt = "", h, w}: ImageKitProps) {
       className={className}
       width={w}
       height={h}
+      transformation={[
+        {
+          width: w,
+          height: h,
+        }
+      ]}
     />
   );
 }
