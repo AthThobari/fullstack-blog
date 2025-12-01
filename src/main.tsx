@@ -11,17 +11,17 @@ import SinglePostPage from "./routes/SinglePostPage";
 import MainLayout from "./layouts/MainLayout";
 import { ClerkProvider } from "@clerk/clerk-react";
 
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
-console.log("Public_key =",PUBLISHABLE_KEY)
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+console.log("Public_key =", PUBLISHABLE_KEY);
 if (!PUBLISHABLE_KEY) {
-  throw new Error('Missing Publishable Key')
+  throw new Error("Missing Publishable Key");
 }
 
 const router = createBrowserRouter([
   {
     element: <MainLayout />,
     children: [
-      { path: "/", element: <Homepage /> },
+      { path: "/blog/", element: <Homepage /> },
       { path: "/posts", element: <PostListPage /> },
       { path: "/:slug", element: <SinglePostPage /> },
       { path: "/write", element: <Write /> },
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </ClerkProvider>
   </StrictMode>
 );
