@@ -21,12 +21,12 @@ const router = createBrowserRouter([
   {
     element: <MainLayout />,
     children: [
-      { path: "/blog/", element: <Homepage /> },
-      { path: "/posts", element: <PostListPage /> },
-      { path: "/:slug", element: <SinglePostPage /> },
-      { path: "/write", element: <Write /> },
-      { path: "/login", element: <LoginPage /> },
-      { path: "/register", element: <RegisterPage /> },
+      { path: "/blog", element: <Homepage /> },
+      { path: "/blog/posts", element: <PostListPage /> },
+      { path: "/blog/:slug", element: <SinglePostPage /> },
+      { path: "/blog/write", element: <Write /> },
+      { path: "/blog/login", element: <LoginPage /> },
+      { path: "/blog/register", element: <RegisterPage /> },
     ],
   },
 ]);
