@@ -50,7 +50,7 @@ function Navbar() {
         <Link to={"/blog/"}>About</Link>
 
         <SignedOut>
-          <Link to={"/login"}>
+          <Link to={"/blog/login"}>
             <button className="bg-blue-800 text-white py-2 px-4 rounded-3xl">
               Login 👋
             </button>
