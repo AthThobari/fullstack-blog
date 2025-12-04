@@ -78,9 +78,8 @@ function SinglePostPage() {
               <ImageKit src="instagram.svg" />
               </Link>
             </div>
-              <PostMenuActions />
-
           </div>
+            <PostMenuActions />
         </div>
       </div>
     </div>
