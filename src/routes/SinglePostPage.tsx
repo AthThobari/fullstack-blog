@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import ImageKit from "../components/Image";
 import PostMenuActions from "../components/PostMenuActions";
+import Search from "../components/Search";
+import Comments from "../components/Comments";
 
 function SinglePostPage() {
   return (
@@ -35,7 +37,7 @@ function SinglePostPage() {
         </div>
       </div>
       {/* content */}
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col md:flex-row gap-12">
         {/* text */}
         <div className="lg:text-lg flex flex-col gap-6 text-justify">
           <p>
@@ -62,26 +64,97 @@ function SinglePostPage() {
             nostrum! Sequi assumenda fuga consequatur enim fugit. Error amet
             mollitia eius beatae quam. Quas, ab magni.
           </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tenetur
+            laboriosam molestias, beatae odit sapiente culpa porro laudantium,
+            blanditiis asperiores dolore corrupti voluptatum voluptas deleniti
+            quidem fuga nihil hic, provident laborum! Rerum dignissimos velit
+            nostrum! Sequi assumenda fuga consequatur enim fugit. Error amet
+            mollitia eius beatae quam. Quas, ab magni.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tenetur
+            laboriosam molestias, beatae odit sapiente culpa porro laudantium,
+            blanditiis asperiores dolore corrupti voluptatum voluptas deleniti
+            quidem fuga nihil hic, provident laborum! Rerum dignissimos velit
+            nostrum! Sequi assumenda fuga consequatur enim fugit. Error amet
+            mollitia eius beatae quam. Quas, ab magni.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tenetur
+            laboriosam molestias, beatae odit sapiente culpa porro laudantium,
+            blanditiis asperiores dolore corrupti voluptatum voluptas deleniti
+            quidem fuga nihil hic, provident laborum! Rerum dignissimos velit
+            nostrum! Sequi assumenda fuga consequatur enim fugit. Error amet
+            mollitia eius beatae quam. Quas, ab magni.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tenetur
+            laboriosam molestias, beatae odit sapiente culpa porro laudantium,
+            blanditiis asperiores dolore corrupti voluptatum voluptas deleniti
+            quidem fuga nihil hic, provident laborum! Rerum dignissimos velit
+            nostrum! Sequi assumenda fuga consequatur enim fugit. Error amet
+            mollitia eius beatae quam. Quas, ab magni.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tenetur
+            laboriosam molestias, beatae odit sapiente culpa porro laudantium,
+            blanditiis asperiores dolore corrupti voluptatum voluptas deleniti
+            quidem fuga nihil hic, provident laborum! Rerum dignissimos velit
+            nostrum! Sequi assumenda fuga consequatur enim fugit. Error amet
+            mollitia eius beatae quam. Quas, ab magni.
+          </p>
         </div>
         {/* menu */}
         <div className="px-4 h-max sticky top-8">
-          <h1>Author</h1>
-          <div className="">
-            <ImageKit src="userImg.jpeg" className="w-12 h-12 object-cover rounded-full" w={48} h={48}/>
-            <Link to={""}>John Doe</Link>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <h1 className="mb-4 text-sm font-medium">Author</h1>
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-8">
+              <ImageKit
+                src="userImg.jpeg"
+                className="w-12 h-12 object-cover rounded-full"
+                w={48}
+                h={48}
+              />
+              <Link to={""} className="text-blue-800">John Doe</Link>
+            </div>
+            <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet.</p>
             <div className="flex gap-2">
               <Link to={""}>
-              <ImageKit src="facebook.svg" />
+                <ImageKit src="facebook.svg" />
               </Link>
               <Link to={""}>
-              <ImageKit src="instagram.svg" />
+                <ImageKit src="instagram.svg" />
               </Link>
             </div>
           </div>
-            <PostMenuActions />
+          <PostMenuActions />
+          <h1 className="mt-8 mb-4 text-sm font-medium">Categories</h1>
+          <div className="flex flex-col gap-2 text-sm">
+            <Link to={""} className="underline">
+              All
+            </Link>
+            <Link to={""} className="underline">
+              Web Design
+            </Link>
+            <Link to={""} className="underline">
+              Development
+            </Link>
+            <Link to={""} className="underline">
+              Databases
+            </Link>
+            <Link to={""} className="underline">
+              Search Engines
+            </Link>
+            <Link to={""} className="underline">
+              Marketing
+            </Link>
+          </div>
+          <h1 className="mt-8 mb-4 text-sm font-medium">Search</h1>
+          <Search />
         </div>
       </div>
+      <Comments />
     </div>
   );
 }
