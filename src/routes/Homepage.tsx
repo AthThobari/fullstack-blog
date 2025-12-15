@@ -21,7 +21,7 @@ function Homepage() {
           <p className="mt-8 text-md md:text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, necessitatibus maiores.</p>
         </div>
         {/* animated button */}
-        <Link to={"/write"} className="hidden md:block relative">
+        <Link to={"/blog/write"} className="hidden md:block relative">
         <svg
         viewBox="0 0 200 200"
         width={200}
