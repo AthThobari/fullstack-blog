@@ -5,6 +5,7 @@
     "": {
       "name": "re-blog-ts",
       "dependencies": {
+        "@imagekit/react": "^5.0.1",
         "@tailwindcss/vite": "^4.1.18",
         "react": "^19.2.0",
         "react-dom": "^19.2.0",
@@ -144,6 +145,10 @@
     "@humanwhocodes/module-importer": ["@humanwhocodes/module-importer@1.0.1", "", {}, "sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA=="],
 
     "@humanwhocodes/retry": ["@humanwhocodes/retry@0.4.3", "", {}, "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ=="],
+
+    "@imagekit/javascript": ["@imagekit/javascript@5.2.1", "", {}, "sha512-+wGuuDceDhUX9KsMSj806uoRSCVQYG+K530/WIJhrWVxVpzxFEgqHIhExwdOP8QjrRaHr9q/kif3h7X8QP8zrA=="],
+
+    "@imagekit/react": ["@imagekit/react@5.0.1", "", { "dependencies": { "@imagekit/javascript": "^5.1.0" }, "peerDependencies": { "react": "^16.13.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0 || ^19.0.0" } }, "sha512-AX1w8ZswnY93QDA/QE1HtoQN2OVc4BsBaxOnL0iZzDnq1xb01Xg2qdLOnIWqMgcK5g/yKxBxZT97hBM2lsmSVQ=="],
 
     "@jridgewell/gen-mapping": ["@jridgewell/gen-mapping@0.3.13", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.0", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA=="],
 
