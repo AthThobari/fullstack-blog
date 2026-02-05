@@ -1,7 +1,5 @@
 const SinglePostPage = () => {
-return (
-<div>SinglePost</div>
-)
-}
+  return <div>SinglePost</div>;
+};
 
 export default SinglePostPage;
