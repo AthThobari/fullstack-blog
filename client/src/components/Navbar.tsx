@@ -31,8 +31,8 @@ function Navbar() {
             open ? "right-0" : "-right-full"
           }`}
         >
-          <Link to={"/blog/"}>Home</Link>
-          <Link to={"/blog/"}>Trending</Link>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/"}>Trending</Link>
           <Link to={"/blog/"}>Most Popular</Link>
           <Link to={"/blog/"}>About</Link>
           <Link to={"/blog/"}>
