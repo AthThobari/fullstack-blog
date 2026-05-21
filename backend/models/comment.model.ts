@@ -16,20 +16,6 @@ const commentSchema = new Schema(
       type: String,
       required: true,
     },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    img: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    savedPost: {
-      type: [String],
-      default: [],
-    },
   },
   { timestamps: true },
 );

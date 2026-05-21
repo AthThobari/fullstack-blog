@@ -1,27 +1,33 @@
 import mongoose, { Schema } from "mongoose";
 
-const userSchema = new Schema({
+const userSchema = new Schema(
+  {
+    clerkUserId: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     username: {
-        type: String,
-        required: true,
-        unique: true,
+      type: String,
+      required: true,
+      unique: true,
     },
     email: {
-        type: String,
-        required: true,
-        unique: true,
+      type: String,
+      required: true,
+      unique: true,
     },
     img: {
-        type: String,
-        required: true,
-        unique: true,
+      type: String,
+      required: true,
+      unique: true,
     },
     savedPost: {
-        type: [String],
-        default: [],
+      type: [String],
+      default: [],
     },
-},
-{timestamps: true}
+  },
+  { timestamps: true },
 );
 
-export default mongoose.model("User", userSchema)
+export default mongoose.model("User", userSchema);
